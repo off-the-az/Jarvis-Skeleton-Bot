@@ -1,0 +1,4 @@
+token = "2059418197:AAGmQ0rzi_vVNh60aGeKh6ADtLjUwgmhhe0"
+GROUP_ID = -708933990
+reports = 1266879117
+#-613410571
