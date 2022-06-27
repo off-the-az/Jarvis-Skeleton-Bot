@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 dp.filters_factory.bind(IsAdminFilter)
-'''
+
 #mute
 @dp.message_handler(is_admin=True, chat_id=config.GROUP_ID, commands="mute")
 async def cmd_readonly(message: types.Message):
@@ -73,7 +73,6 @@ async def cmd_unreadonly(message: types.Message):
 	    
 	await message.reply("Мут снят .Больше не шали так")
 
-'''
 #perk
 @dp.message_handler(is_admin=False, chat_id=config.GROUP_ID, commands=["checkperms"])
 async def cmd_checkperms(message: types.Message):
